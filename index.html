@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bat Ball Game</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bat Ball Stump Game</h1>
+    <button
+      onclick="
+        const userChoice = 'Bat';
+        const choices = ['Bat', 'Ball', 'Stump'];
+        let computerChoice = choices[Math.floor(Math.random() * 3)];
+        let result;
+        if (userChoice === computerChoice) {
+            result = 'It\'s a tie';
+        } else if (computerChoice === 'Ball') {
+            result = 'User won';
+        } else {
+            result = 'Computer won';
+        }
+        alert('You chose ' + userChoice + '. Computer chose ' + computerChoice + '. ' + result + '.');
+    "
+    >
+      Bat
+    </button>
+
+    <button
+      onclick="
+        const userChoice = 'Ball';
+        const choices = ['Bat', 'Ball', 'Stump'];
+        let computerChoice = choices[Math.floor(Math.random() * 3)];
+        let result;
+        if (userChoice === computerChoice) {
+            result = 'It\'s a tie';
+        } else if (computerChoice === 'Stump') {
+            result = 'User won';
+        } else {
+            result = 'Computer won';
+        }
+        alert('You chose ' + userChoice + '. Computer chose ' + computerChoice + '. ' + result + '.');
+    "
+    >
+      Ball
+    </button>
+
+    <button
+      onclick="
+        const userChoice = 'Stump';
+        const choices = ['Bat', 'Ball', 'Stump'];
+        let computerChoice = choices[Math.floor(Math.random() * 3)];
+        let result;
+        if (userChoice === computerChoice) {
+            result = 'It\'s a tie';
+        } else if (computerChoice === 'Bat') {
+            result = 'User won';
+        } else {
+            result = 'Computer won';
+        }
+        alert('You chose ' + userChoice + '. Computer chose ' + computerChoice + '. ' + result + '.');
+    "
+    >
+      Stump
+    </button>
+  </body>
+</html>
